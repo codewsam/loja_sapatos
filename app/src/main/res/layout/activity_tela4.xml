@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tela4id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5FD359"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAE8E8"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Barra de Navegação -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#46C53E"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="Voltar"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_input_get" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Pedidos"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!-- Conteúdo Scrollável -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Exemplo de Card de Pedido -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="#646362"
+                    android:elevation="4dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Nome do Cliente -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="Ícone de usuário"
+                            android:src="@android:drawable/ic_menu_my_calendar" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Maria Conceição"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- Data do Pedido -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="Ícone de calendário"
+                            android:src="@android:drawable/ic_menu_today" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="27/01/2024"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- Produto do Pedido -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="Ícone de carrinho"
+                            android:src="@android:drawable/ic_input_get" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Sapatilha branca - nº 36"
+                            android:textColor="#FFFFFF"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- Status do Pedido -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="8dp"
+                        android:text="Status: Entregue"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!-- Adicione outros cards aqui seguindo o exemplo acima -->
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
